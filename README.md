@@ -41,7 +41,7 @@ To set up the project locally, follow these steps:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/SartHak-0-Sach/Interactive-pricing-component_frontend_project)
-- Live Site URL: [Live Site](https://pricing-component-project.netlify.app/)
+- Live Site URL: [Live Site](https://pricing-comp-frontend.netlify.app/)
 
 ## My process
 
