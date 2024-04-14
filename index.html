@@ -1,39 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="animate__animated animate__slideInDown">
+        Simple, traffic-based pricing
+      </h1>
+      <div>
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
+      </div>
+      <img src="images/pattern-circles.svg" alt="" />
+    </header>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <main>
+      <!-- define grid container  -->
+      <div class="container">
+        <!-- First grid member -->
+        <p class="views" id="views">100k Pageviews</p>
+        <!-- Second grid member  -->
+        <div class="animate__animated animate__jackInTheBox">
+          <input
+            type="range"
+            min="0"
+            max="4"
+            value="2"
+            class="slider"
+            id="range"
+            title="price range slider"
+          />
+        </div>
+        <!-- Third grid member -->
+        <p>
+          <span class="amount" id="price">$16.00</span>
+          <span class="period">/ month</span>
+        </p>
+        <!-- Forth grid member -->
+        <div class="billing-div">
+          <label for="checkbox">Monthly Billing</label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="checkbox"
+          />
+          <label for="checkbox">Yearly Billing</label>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+          <p class="discount-mobile">
+            -25% <span class="discount">discount</span>
+          </p>
+        </div>
+      </div>
+      <!-- define grid container  -->
+      <div class="features-div">
+        <hr />
+        <!-- First grid member -->
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <!-- Second grid member -->
+        <div class="btn-div">
+          <button type="button">Start my trial</button>
+        </div>
+      </div>
+    </main>
 
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
