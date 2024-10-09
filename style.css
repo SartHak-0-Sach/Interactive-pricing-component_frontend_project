@@ -246,6 +246,21 @@ ul {
     cursor: pointer;
 }
 
+/* Footer */
+.attribution {
+    position: absolute;
+    bottom: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 /* Media queries ----------------- */
 
 @media (min-width: 768px) {
