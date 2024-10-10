@@ -7,6 +7,7 @@
 }
 
 body {
+    margin-top: 89px;
     min-height: 100vh;
     font-family: "Manrope", sans-serif;
     background-image: url("images/bg-pattern.svg");
